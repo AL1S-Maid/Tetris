@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+}
+
+@media (max-width: 768px) {
+  .game-div {
+    flex-direction: column-reverse;
+    width: 100vw;
+    .controls {
+      .item {
+        font-size: 0.9rem !important;
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      .empty {
+        flex-direction: row !important;
+        gap: 5vw !important;
+      }
+      .ass .row {
+        .element {
+          width: 20px !important;
+          height: 20px !important;
+        }
+      }
+    }
+    .game-min .row{
+      .element {
+        width: 25px !important;
+        height: 25px !important;
+      }
+    }
+  }
+}
